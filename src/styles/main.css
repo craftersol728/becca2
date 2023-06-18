@@ -7,19 +7,19 @@
   overflow: hidden;
   z-index: -1;
 }
-.video-background .video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100vh;
-}
-.video-background .video:after {
+.video-background:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #f5f5dc;
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
+}
+.video-background .video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
