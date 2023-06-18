@@ -1,5 +1,5 @@
 import React from 'react'
-import './VideoBackground.scss'
+import '../../styles/components/_video-background.scss'
 
 const VideoBackground: React.FC = () => {
   return (
