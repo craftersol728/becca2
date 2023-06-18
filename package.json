@@ -11,8 +11,7 @@
     "build-css": "node-sass --output-style compressed  src/styles/ -o src/dist/",
     "watch-css": "node-sass -w --output-style compressed  src/styles/ -o src/dist/",
     "dev": "npm run build-css && npm run watch-css & npm run start",
-    "create-dist": "mkdir -p src/dist/",
-    "postinstall": "npm run create-dist && npm run build-css"
+    "create-dist": "mkdir -p src/dist/"
   },
   "dependencies": {
     "react": "^18.2.0",
