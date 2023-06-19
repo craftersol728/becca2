@@ -1,6 +1,7 @@
 // global
 @import 'global/variables';
 @import 'global/mixin';
+@import 'global/global';
 
 // pages
 @import 'pages/home';
@@ -8,4 +9,4 @@
 // components
 @import 'components/hero';
 
-@import 'components/video-background'
+@import 'components/video-background';

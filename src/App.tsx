@@ -1,18 +1,13 @@
-import './dist/main.css';
-import './App.css';
+import './dist/main.css'
 
-//import { useState } from 'react';
-import VideoBackground from '../src/components/CoverVideo/VideoBackground';  // Imported the VideoBackground component
+import { Hero } from './components/Hero/Hero'
 
 function App() {
-
   return (
     <>
-      <VideoBackground /> 
-      
-  
+      <Hero heroType="video" source="/coverVideo.mp4" title="Title" subTitle="Sub Title" />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

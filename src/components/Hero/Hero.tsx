@@ -1,7 +1,24 @@
 import React from 'react'
+import { CoverVideo } from '../CoverVideo/VideoBackground'
 
-export const Home = () => {
+interface Props {
+  heroType: 'video' | 'image'
+  source: string
+  title?: string
+  subTitle: string
+}
+
+export const Hero = ({ heroType, source, title, subTitle }: Props) => {
   return (
-    <div>Home</div>
+    <section className="hero">
+      <div className="cover">
+        {heroType === 'video' ? <CoverVideo src={source} /> : <img src={source} alt="hero image" />}
+      </div>
+
+      <div className="content">
+        <h1 className="title">{title}</h1>
+        <p className="subtitle">{subTitle}</p>
+      </div>
+    </section>
   )
 }
