@@ -1,5 +1,5 @@
 import React from 'react'
-import { CoverVideo } from '../CoverVideo/VideoBackground'
+import { CoverVideo } from '../CoverVideo/CoverVideo'
 
 interface Props {
   heroType: 'video' | 'image'
