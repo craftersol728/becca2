@@ -39,29 +39,57 @@ body {
     justify-content: space-between;
     list-style-type: none;
 
-    li:not(:last-child) {
-      margin-right: 80px;
-    }
+    li {
+      position: relative;
 
-    a {
-      font-size: 16px;
-      font-weight: 400;
-      color: #2f234f;
-      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 80px;
+      }
 
-      &.active {
-        color: #574c4c;
-        font-weight: 500;
-        position: relative;
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #2f234f;
+        text-decoration: none;
+        transition: color 1s ease-in-out; // Transition for color
 
-        &::after {
-          content: '';
+        &.active {
+          color: #574c4c;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #574c4c;
+          }
+        }
+
+        &::before {
+          content: "";
           position: absolute;
-          bottom: -4px;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #574c4c;
+          top: -5px;  // Increase the size
+          bottom: -5px; // Increase the size
+          left: -5px;  // Increase the size
+          right: -5px; // Increase the size
+          background: #574c4c;
+          z-index: -1;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0s;
+        }
+
+        &:hover {
+          color: white; // Changes text color to white on hover
+
+          &::before {
+            transform: scaleX(1);
+            transition: transform 0.5s ease-in-out;
+          }
         }
       }
     }

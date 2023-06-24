@@ -1,3 +1,4 @@
+
 .summary-container {
     display: flex;
     justify-content: center;
@@ -5,7 +6,11 @@
     padding: 20px;
     min-height: 100vh; // This makes sure your container is at least as tall as the viewport
     box-sizing: border-box; // This ensures padding is included in the height calculation
-  
+
+    .h2 {
+      font-size: large;
+    }
+    
     .text-section {
       flex: 1;
       padding-right: 20px;
