@@ -11,7 +11,9 @@ const NavBar = () => {
           <Logo />
         </div> */}
           <ul>
-            
+          <li>
+              <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
+            </li>
             <li>
               <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''}>About Us</NavLink>
             </li>
