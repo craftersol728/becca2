@@ -1,16 +1,35 @@
-// import React from 'react';
+//import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import Logo from '../../../public/assets/Logo.png'
 
 const NavBar = () => {
   return (
     <div className="nav-bar">
-      <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Icon</NavLink>
-      <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''}>About Us</NavLink>
-      <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>Services</NavLink>
-      <NavLink to="/gallery" className={({ isActive }) => isActive ? 'active' : ''}>Gallery/Testimonials</NavLink>
-      <NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>FAQ</NavLink>
-      <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact/Booking</NavLink>
+      <div className="container">
+      <div className="nav-elements">
+      {/* <div className="logo">
+          <Logo />
+        </div> */}
+          <ul>
+            
+            <li>
+              <NavLink to="/about-us" className={({ isActive }) => isActive ? 'active' : ''}>About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/gallery" className={({ isActive }) => isActive ? 'active' : ''}>Gallery/Testimonials</NavLink>
+            </li>
+            <li>
+              <NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>FAQ</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact/Booking</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }

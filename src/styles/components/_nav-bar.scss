@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -20,10 +20,14 @@ body {
 .nav-bar {
   height: 60px;
   background-color: #fef7e5;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000; // Ensure the navbar stays on top of other elements
 }
 
-.logo {}
+.logo {
+  height: 10%;
+}
 
 .menu-icon {
   display: none;
@@ -36,7 +40,7 @@ body {
     list-style-type: none;
 
     li:not(:last-child) {
-      margin-right: 60px;
+      margin-right: 80px;
     }
 
     a {
