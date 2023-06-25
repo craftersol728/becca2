@@ -15,6 +15,12 @@ function App() {
         <NavBar />
         <Hero heroType="video" source="/coverVideo.mp4" title="Title" subTitle="Sub Title" />
         <Summary />
+        <Summary />
+        <Summary />
+        <Summary />
+        <Summary />
+        <Summary />
+        
       </Router>
     </>
   )

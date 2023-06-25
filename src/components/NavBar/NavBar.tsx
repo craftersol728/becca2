@@ -1,12 +1,32 @@
 //import React from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo.png'
 
 const NavBar = () => {
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos;
+
+      setPrevScrollPos(currentScrollPos);
+      setVisible(visible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   
   return (
-    <div className="nav-bar">
+    <div className={`nav-bar ${visible ? '' : 'hide'}`}>
       <div className="container">
       <div className="nav-elements">
       {/* <div className="logo">
