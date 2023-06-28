@@ -17,7 +17,7 @@ body {
   margin: 0 !important;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #fcfcfc;
+  background-color: #fef7e5;
   overflow-x: hidden;
 
   &::-webkit-scrollbar-button {
@@ -32,7 +32,7 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: #babac0;
     border-radius: 16px;
-    border: 5px solid #fff;
+    border: 5px solid #fef7e5;
   }
 
   &::-webkit-scrollbar-track:hover {
@@ -40,11 +40,11 @@ body {
   }
 
   &::-webkit-scrollbar {
-    background-color: #fff;
+    background-color: #fef7e5;
     width: 16px;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: #fef7e5;
   }
 }
