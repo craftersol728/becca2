@@ -18,12 +18,18 @@ body {
   border-radius: 10px;
 }
 
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .nav-bar {
   height: 60px;
   background-color: #E6E6FA;
   position: sticky;
   top: 0;
-  z-index: 1000; // Ensure the navbar stays on top of other elements
+  z-index: 100; // Ensure the navbar stays on top of other elements
   transition: transform 0.3s ease-out;
 }
 
