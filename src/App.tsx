@@ -15,7 +15,7 @@ function App() {
       <GlobalScrollbar />
       <Router>
         <NavBar />
-        <Hero heroType="video" source="/coverVideo.mp4" title="Title" subTitle="Sub Title" />
+        <Hero heroType="video" source="/coverVideo.mp4" title="Becca" subTitle="Becca" scroll="Scroll down"/>
         
 
       </Router>
