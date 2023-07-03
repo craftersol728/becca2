@@ -28,7 +28,10 @@
 
   .scrollDown {
     position: absolute;
-    bottom: -350px; // adjust this to move the element closer or further from the bottom
+    top: 350px; // adjust this to move the element closer or further from the bottom
+    left: 0;
+    right: 0;
+    text-align: center;
     opacity: 0;
     animation: 
       fadeInOut 3s infinite, 

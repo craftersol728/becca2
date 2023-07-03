@@ -9,7 +9,7 @@ interface Props {
   scroll: string
 }
 
-export const Hero = ({ heroType, source, title, subTitle }: Props) => {
+export const Hero = ({ heroType, source, title, subTitle ,scroll }: Props) => {
   return (
     <section className="hero">
       <div className="cover">
@@ -19,7 +19,7 @@ export const Hero = ({ heroType, source, title, subTitle }: Props) => {
       <div className="content">
         <h1 className="title">{title}</h1>
         <p className="subtitle">{subTitle}</p>
-        <h1 className="scrollDown">{subTitle}</h1>
+        <h1 className="scrollDown">{scroll}</h1>
       </div>
     </section>
   )
