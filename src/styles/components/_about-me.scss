@@ -1,0 +1,16 @@
+.about-me {
+    display: inline-block;
+    justify-content: center;
+    align-items: flex-start; // change this to 'center' if you want vertical centering too
+    height: 1000vh; // viewport height, change as needed
+    text-align: left;
+
+    h1 {
+        margin: 0; // Remove margin if any
+    }
+    
+    p {
+        margin: 0; // Remove margin if any
+        display: inline;
+    }
+}
